@@ -8,7 +8,13 @@ function TransactionForm() {
     const { transactions, addTransaction } = useContext(GlobalContext);
     var maxId = 0;
     if (transactions) {
-        transactions.map(trx => (trx.id > maxId ? maxId = trx.id : maxId = maxId))
+        transactions.map(trx =>
+        {
+            if (trx.id > maxId) {
+                maxId = trx.id;
+            }
+            return maxId;
+        })
     }
 
     const onFormSubmit = (e) => {
