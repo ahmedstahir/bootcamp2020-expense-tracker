@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Expense Tracker
 
-## Available Scripts
+Every application created in React will essentially have various components that make up the whole application. More often than not, these components will need to have access to same data.
 
-In the project directory, you can run:
+For example, this Expense Tracker has a form that captures transactions from the users. Then there is a component that shows closing balance, one displays income and expense totals separately and another exhibits the history of all transactions. These components must have access to all the transactions to achieve this. One way is to do "props drilling" to pass the data to every component. However, a more elegant way is to use **Context API**.
 
-### `npm start`
+Context API enables us to have the data available to all the components within a component-tree. In other words, it can create *global variables* that can be accessed by any node of a particular component-tree.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project achieves to
+- provide intuitive UI for the users
+- add new income and expense transactions
+- show overall balance as well as separate income and expense totals
+- display transactions history
+- delete transactions
+- reflect the effect of adding or deleting a transaction on totals
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Expense Tracker is deployed on *Surge* [at this link](http://context-api-expense-tracker.surge.sh/)
 
-### `npm test`
+<hr/>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Repository created as part of [Bootcamp 2020](https://github.com/panacloud/bootcamp-2020) online sessions
